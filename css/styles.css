@@ -1,0 +1,94 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+.calculadora{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+.calculadora .numero{
+    font-size: 80px;
+    background-color: green;
+    color: beige;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.calculadora .operador{
+    display: grid;
+    grid-template-columns: 5/6;
+    grid-template-rows: 11/6;
+    font-size: 80px;
+    background-color: green;
+    color: beige;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+.calculadora .numero.cero{
+    grid-column: 1/3;
+}
+
+.calculadora .igual{
+    margin: 2px;
+    font-size: 80px;
+    border-radius: 5px;
+    background-color: green;
+    color: beige;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calculadora .borrar{
+    grid-column: 1/3;
+    margin: 2px;
+    font-size: 100px;
+    border-radius: 5px;
+    background-color: green;
+    color: beige;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calculadora .pantalla{
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 30px;
+    text-align: center;
+    grid-column: 1/5;
+    background-color: aliceblue;
+    overflow-x: auto;
+}
+
+.numero:hover{
+    background-color: fuchsia;
+    cursor: pointer;
+}
+
+.operador:hover{
+    background-color: fuchsia;
+    cursor: pointer;
+}
+
+.igual:hover{
+    background-color: fuchsia;
+    cursor: pointer;
+}
+
+.borrar:hover{
+    background-color: fuchsia;
+    cursor: pointer;
+}
